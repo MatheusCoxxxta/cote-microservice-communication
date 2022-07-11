@@ -1,4 +1,4 @@
-const cote = require("cote");
+import cote from "cote";
 
 const requester = new cote.Requester({
   name: "currency conversion requester - client",

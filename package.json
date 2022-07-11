@@ -4,12 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "responder:server": "node src/req-res/responder.js",
-    "client:server": "node src/req-res/client.js",
-    "publisher:server": "node src/pub-sub/publisher.js",
-    "subscriber:server": "node src/pub-sub/subscriber.js"
+    "responder:server": "ts-node-dev src/req-res/responder.ts",
+    "client:server": "ts-node-dev src/req-res/client.ts",
+    "publisher:server": "ts-node-dev src/pub-sub/publisher.ts",
+    "subscriber:server": "ts-node-dev src/pub-sub/subscriber.ts"
   },
   "dependencies": {
-    "cote": "^1.0.3"
+    "cote": "^1.0.3",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/cote": "^0.19.2",
+    "ts-node-dev": "^2.0.0"
   }
 }
