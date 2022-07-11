@@ -1,0 +1,15 @@
+{
+  "name": "cote-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "responder:server": "node src/req-res/responder.js",
+    "client:server": "node src/req-res/client.js",
+    "publisher:server": "node src/pub-sub/publisher.js",
+    "subscriber:server": "node src/pub-sub/subscriber.js"
+  },
+  "dependencies": {
+    "cote": "^1.0.3"
+  }
+}
